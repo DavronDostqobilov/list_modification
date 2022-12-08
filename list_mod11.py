@@ -7,4 +7,10 @@ def remove_max(lst):
     Returns:
         list: list without maximum numbers.
     '''
-    return
+    mx=0
+    for i in range(len(lst)):
+        if mx<lst[i]:
+            mx=lst[i]
+    lst.pop(lst.index(mx))
+    return lst
+print(remove_max([1,2,3,4,5,6,7]))
