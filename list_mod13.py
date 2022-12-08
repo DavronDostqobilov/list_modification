@@ -6,4 +6,11 @@ def replace_maximum_with_0(lst):
     Returns: 
         list: list maximum numbers are replaced with 0
     """
-    return
+    mx=0
+    for i in range(len(lst)):
+        if mx<lst[i]:
+            mx=lst[i]
+    lst.pop(lst.index(mx))
+    lst.append(0)
+    return lst
+print(replace_maximum_with_0([1,2,3,4,5,6,7]))
