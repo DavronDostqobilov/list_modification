@@ -9,7 +9,7 @@ def square_and_remove_divisible_by_3(lst):
     '''
     list1=[]
     for i in range(len(lst)):
-        if lst[i]%3==0:
+        if lst[i]%3!=0:
             x=lst[i]**2
             list1.append(x)
     return list1
